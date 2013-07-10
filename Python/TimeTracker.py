@@ -3,6 +3,8 @@
 #This programm will write to a file the time I spend doing a concret task.
 #To acomplish this, I will use the standard text writting and reading tool
 
+#TODO: writting to file code
+
 #import time module for local time reference
 import time
 
@@ -44,7 +46,8 @@ if stopMonth == month:
     else:
         printstopDay - day, " day(s)",  stopHour - hour, " hour(s)",  stopMinute - minute, " minute(s)", stopSecond - second, " seconds,"
 else :
-    print stopMonth - month, " month(s)", stopDay - day, " day(s)",  stopHour - hour, " hour(s)",  stopMinute - minute, " minute(s)", stopSecond - second, " seconds," # FIXME: What to do when time is negative, without too many if's?
+    print stopMonth - month, " month(s)", stopDay - day, " day(s)",  stopHour - hour, " hour(s)",  stopMinute - minute, " minute(s)", stopSecond - second, " seconds," 
+# FIXME: What to do when time is negative, without too many if's?
 
 print "\n\nCongratulations, your time has been filed. Now have a rest, you deserve it! See you soon!"
 
