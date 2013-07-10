@@ -67,9 +67,9 @@ if stopMonth == month:
                 if stopSecond != second:
                     print stopSecond - second, " seconds."
             else:
-                print stopMinute - minute, " minute(s)", getTimeReminder(stopSecond, second), " seconds,"
+                print stopMinute - minute, " minute(s)", getTimeReminder(second, stopSecond), " seconds,"
         else:
-            print stopHour - hour, " hour(s)", getTimeReminder (minute, stopMinute), " minute(s)", getTimeReminder(stopSecond, second), " seconds,"
+            print stopHour - hour, " hour(s)", getTimeReminder (minute, stopMinute), " minute(s)", getTimeReminder(second, stopSecond), " seconds,"
     else:
         print stopDay - day, " day(s)",  getTimeReminder (hour, stopHour,24), " hour(s)",  getTimeReminder (minute, stopMinute), " minute(s)", getTimeReminder (second, stopSecond), " seconds,"
 else :
